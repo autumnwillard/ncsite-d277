@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>State of North Carolina</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="active-page">North Carolina (Home)</a>
+            </li>
+            <li>
+                <a href="raleigh.html">Raleigh (Capital)</a>
+            </li>
+            <li>
+                <a href="charlotte.html">Charlotte</a>
+            </li>
+            <li>
+                <a href="chapelhill.html">Chapel Hill</a>
+            </li>
+        </ul>
+    </nav>
+<header class="hero">
+    <h1 id="welcome">Welcome to North Carolina!</h1>
+</header>
+    <main>
+        <section class="home">
+            <div class="floating"><img src="images/scenery.jpg" alt="image of North Carolina forest scenery" style="margin-top: 40px;"></div>
+            <h2>About Our Beautiful State</h2>
+            <p>Nestled in the southeastern region of the United States, North Carolina is a state rich in diversity, history, and natural beauty. From the majestic Appalachian Mountains to the serene Atlantic beaches, North Carolina offers a unique blend of landscapes that captivate both residents and visitors alike.</p>
+            <p>North Carolina's history is as diverse as its geography. As one of the original 13 colonies, the state has played a pivotal role in American history, from the first English settlement in the New World to the Wright Brothers' first flight. This rich heritage is celebrated in numerous historical sites and museums across the state.</p>
+            <p>Economically, North Carolina is a powerhouse of industry and innovation. The state's Research Triangle Park is one of the largest research parks in the world, home to hundreds of companies. Agriculture remains a significant part of the economy, with North Carolina leading in the production of tobacco, sweet potatoes, and poultry.</p>
+        </section>
+        <aside class="home">
+            <h2>Helpful Links</h2>
+            <ul>
+                <li><a href="https://www.nc.gov/" target="_blank">NC Gov</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/North_Carolina" target="_blank">North Carolina - Wikipedia</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Climate_of_North_Carolina" target="_blank">Climate of North Carolina</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Wildlife_of_North_Carolina" target="_blank">Wildlife of North Carolina</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/List_of_rivers_of_North_Carolina" target="_blank">List of rivers of North Carolina</a></li>
+                <li><a href="https://www.visitnc.com/" target="_blank">Visit North Carolina - Official Travel Website</a></li>
+                <li><a href="https://www.worldatlas.com/maps/united-states/north-carolina" target="_blank">North Carolina Maps & Facts - World Atlas</a></li>
+            </ul>
+        </aside>
+    </main>
+        <div class="message">
+            <h2>Contact Us</h2>
+            <form>
+                    <label for="first">First Name:</label>
+                    <input type="text" id="first" name="user_first" required placeholder="John"/>
+                    <label for="last">Last Name:</label>
+                    <input type="text" id="last" name="user_last" required placeholder="Doe"/>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" required placeholder="johndoe@email.com"/>
+                    <label for="check-mail">Confirm Email:</label>
+                    <input type="email" id="check-mail" name="check-user_email" required placeholder="johndoe@email.com"/>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message" required placeholder="Ask your questions here"></textarea>
+        
+                <button onclick="compareEmails()">Submit</button>
+              </form>
+        </div>
+<footer>Copyright 2023 - Autumn Willard</footer>
+</body>
+</html>
+
+<script>
+    function compareEmails() {
+        var email = document.getElementById('mail').value;
+        var compareEmail = document.getElementById('check-mail').value;
+
+        if(email !== compareEmail) {
+            alert("Emails must match!");
+        } else {
+        }
+    }
+</script>
+
+<!-- https://developer.mozilla.org/en-US/ -->
+<!-- https://en.wikipedia.org/wiki/North_Carolina  -->
+<!-- https://www.nc.gov/  -->
